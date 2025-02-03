@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: rgb(247, 223, 176);
+  
+}
+
+:root {
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+}
+
+@media screen and (min-width: 769px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    /* margin: 0; */
+    padding: 0;
+    gap: 0; 
+    position: relative;
+    width: 530px;
+    margin-top: 3rem;
+  }
+  
+  .head > * { 
+    margin: 0;
+    padding: 0;
+  }
+  
+  img{
+    width: 300px; 
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+    position: absolute;
+    bottom: -10px;
+    
+  }
+  .game-instruct{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 30rem;
+  }
+
+  .head-instruct{
+    margin: 0;
+    padding: 0;
+    gap: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    font-family: "Roboto", serif;
+  }
+  .joint{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .new-game{
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #E67300;
+    color: white;
+    font-size: 0.8rem;
+    border: none;
+  }
+
+  
+  .bg{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .target-color{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    /* margin-top: 20px; */
+  }
+  
+  .btn{
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 30px;
+  }
+  
+  .btn-box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 20px;
+    margin-top: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+    gap: 0; 
+    position: relative;
+    width: 420px;
+    margin-top: 20px;
+  }
+  
+  .head > * { 
+    margin: 0;
+    padding: 0;
+  }
+  
+  img{
+    width: 250px; 
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: var(--primary-color);
+    position: absolute;
+    bottom: -10px;
+    
+  }
+
+  .game-instruct{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .head-instruct{
+    margin: 0;
+    padding: 0;
+    gap: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: "Roboto", serif;
+  }
+  .joint{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .new-game{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #E67300;
+    color: white;
+    font-size: 12px;
+    border: none;
+  }
+
+  
+  .bg{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .target-color{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+  }
+  
+  .btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+  }
+  
+  .btn-box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+}
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 480px) {
+
+  body{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+    gap: 0; 
+    position: relative;
+    width: 230px;
+    margin-top: 25px;
+  }
+  
+  .head > * { 
+    margin: 0;
+    padding: 0;
+  }
+  
+  img{
+    width: 125px;
+    
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    position: absolute;
+    bottom: -10px;
+    
+  }
+  .game-instruct{
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .joint{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  .new-game{
+    padding:20px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    background-color: #E67300;
+    color: white;
+    font-size: 12px;
+    border: none;
+  }
+
+  .head-instruct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: "Roboto", serif;
+  }
+  
+  .bg{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .target-color{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+  }
+  
+  .btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+  }
+  
+  .btn-box{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 250px;
+    padding: 20px;
+    margin-top: 2px;
+  }
+
+  
+  
+}
+
+
+

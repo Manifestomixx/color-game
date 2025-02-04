@@ -61,7 +61,7 @@ body{
   .joint{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 98%;
   }
   .new-game{
     padding: 1rem;
@@ -109,8 +109,30 @@ body{
     margin-top: 1rem;
   }
   
+  @keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    70% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+
+  .game-message{
+    font-size: 14px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 44%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    animation: fadeOut 1s ease-in-out forwards;
+  }
 }
 
+
+/* TABLET VIEW */
 @media screen and (max-width: 768px) {
   .head {
     display: flex;
@@ -207,6 +229,27 @@ body{
     width: 400px;
     padding: 20px;
     margin-top: 30px;
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    70% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+
+  .game-message{
+    font-size: 14px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 46%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation: fadeOut 1s ease-in-out forwards;
   }
   
 }
@@ -317,7 +360,26 @@ body{
   }
 
   
+  @keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    70% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
   
+  .game-message{
+    font-size: 14px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 42%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    animation: fadeOut 1s ease-in-out forwards;
+  }
 }
 
 

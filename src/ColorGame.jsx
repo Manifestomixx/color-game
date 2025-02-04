@@ -107,11 +107,11 @@ const ColorGame = () => {
             </div>
         </div>
         <div data-testid="colorBox" className='target-color'style={{ backgroundColor: targetColor , borderColor: 'transparent rgba(0, 0, 0, 0.1)', borderWidth: '15px', borderStyle: 'solid',boxShadow:"0px 4px 10px rgba(0, 0, 0, 0.3)"}} ></div>
-        <div className='btn-box' data-testid="colorOption"> {options.map((color, index) => (
-            <button key={index} onClick={() => checkAnswer(color)} className='btn' style={{backgroundColor: color, borderColor: 'transparent rgba(0, 0, 0, 0.1)', borderWidth: '15px', borderStyle: 'solid',boxShadow:"0px 4px 10px rgba(0, 0, 0, 0.3)" }}></button>
+        <div className='btn-box'> {options.map((color, index) => (
+            <button data-testid="colorOption" key={index} onClick={() => checkAnswer(color)} className='btn' style={{backgroundColor: color, borderColor: 'transparent rgba(0, 0, 0, 0.1)', borderWidth: '15px', borderStyle: 'solid',boxShadow:"0px 4px 10px rgba(0, 0, 0, 0.3)" }}></button>
         ))}
         </div>
-        {message && <p data-testid="gameStatus" style={{fontSize:"12px"}}>{message}</p>}
+        {message && <p data-testid="gameStatus" className='game-message' style={{fontSize:"12px"}}>{message}</p>}
     </div>
   )
 }

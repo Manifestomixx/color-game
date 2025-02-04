@@ -42,8 +42,8 @@ const ColorGame = () => {
 
     useEffect(() => {
         let colors = [targetColor];
-        let similarCount = Math.min(5, Math.floor(correctAnswers / 6)); // More similar colors over time
-        let randomCount = 5 - similarCount; // The rest are random
+        let similarCount = Math.min(5, Math.floor(correctAnswers / 6)); 
+        let randomCount = 5 - similarCount; 
     
         for (let i = 0; i < similarCount; i++) {
             colors.push(getSimilarColor(targetColor, difficulty));

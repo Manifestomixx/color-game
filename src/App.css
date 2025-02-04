@@ -5,19 +5,14 @@ body{
   
 }
 
-:root {
-  --mobile: 480px;
-  --tablet: 768px;
-  --desktop: 1024px;
-}
 
+/* DESKTOP VIEW */
 @media screen and (min-width: 769px) {
   .head {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
-    /* margin: 0; */
     padding: 0;
     gap: 0; 
     position: relative;
@@ -70,6 +65,7 @@ body{
     color: white;
     font-size: 0.8rem;
     border: none;
+    cursor: pointer;
   }
 
   
@@ -90,13 +86,13 @@ body{
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
-    /* margin-top: 20px; */
   }
   
   .btn{
     width: 4.9rem;
     height: 4.9rem;
     border-radius: 30px;
+    cursor: pointer;
   }
   
   .btn-box{
@@ -125,7 +121,6 @@ body{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 44%;
-    /* left: 50%; */
     transform: translate(-50%, -50%);
     animation: fadeOut 1s ease-in-out forwards;
   }
@@ -376,7 +371,6 @@ body{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 42%;
-    /* left: 50%; */
     transform: translate(-50%, -50%);
     animation: fadeOut 1s ease-in-out forwards;
   }

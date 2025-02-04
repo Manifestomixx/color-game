@@ -27,8 +27,11 @@ const ColorGame = () => {
 
     useEffect(() => {
         const colors = [targetColor];
-        for (let i = 0; i < 5; i++) {
-            colors.push(getRandomColor());
+        while (colors.length < 6) {
+            const newColor = getRandomColor();
+            if (!colors.includes(newColor)) {
+                colors.push(newColor);
+            }
         }
         setOptions(colors.sort(() => Math.random() - 0.5));
     }, [targetColor]);

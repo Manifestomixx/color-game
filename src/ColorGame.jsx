@@ -47,7 +47,6 @@ const ColorGame = () => {
             }, 1000);
         } else {
             setMessage('Wrong, try again! ❌');
-            setScore(0);
             setTimeout(() => {
                 setTargetColor(getRandomColor());
                 setMessage("");

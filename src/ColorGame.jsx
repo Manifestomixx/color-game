@@ -50,10 +50,6 @@ const ColorGame = () => {
             }, 1000);
         } else {
             setMessage('Wrong, try again! ❌');
-            setTimeout(() => {
-                setTargetColor(getRandomColor());
-                setMessage("");
-            }, 1000);
         }
     };
 
@@ -70,10 +66,10 @@ const ColorGame = () => {
                     <button data-testid="newGameButton" onClick={newGame} className='new-game'>New Game</button>
                 </div>
             </div>
-            <div data-testid="colorBox" className='target-color' style={{ backgroundColor: targetColor, borderColor: 'transparent rgba(0, 0, 0, 0.1)', borderWidth: '15px', borderStyle: 'solid', boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}></div>
+            <div data-testid="colorBox" className='target-color' style={{ backgroundColor: targetColor,  border: '15px solid transparent', boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}></div>
             <div className='btn-box'>
                 {options.map((color, index) => (
-                    <button data-testid="colorOption" key={index} onClick={() => checkAnswer(color)} className='btn' style={{ backgroundColor: color, borderColor: 'transparent rgba(0, 0, 0, 0.1)', borderWidth: '15px', borderStyle: 'solid', boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}></button>
+                    <button data-testid="colorOption" key={index} onClick={() => checkAnswer(color)} className='btn' style={{ backgroundColor: color, border: '15px solid transparent', boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)" }}></button>
                 ))}
             </div>
             {message && <p data-testid="gameStatus" className='game-message' style={{ fontSize: "12px" }}>{message}</p>}
